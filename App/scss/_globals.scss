@@ -1,0 +1,235 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+  // overflow: hidden;
+  // overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+  width: .5em;
+}
+ 
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+ 
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(134, 122, 122, 0.53);
+  border-top: {
+    left-radius: 10px;
+    right-radius: 10px;
+  }
+  border-bottom: {
+    left-radius: 10px;
+    right-radius: 10px;
+  }
+  
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $placeHolder;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $placeHolder;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $placeHolder;
+}
+
+body {
+  line-height: 1.3;
+  color: $white;
+  font: {
+    family: "Poppins", sans-serif;
+    size: $font-sm;
+    weight: 300;
+  }
+  min-height: 100vh;
+  position: relative;
+  scroll-behavior: smooth;
+
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+
+//text-center
+.t-center {
+  text-align: center;
+}
+
+//text-justify
+.t-justify {
+  text-align: justify;
+}
+
+// flex-box
+
+.flex {
+    display: flex;
+    &-col {
+      display: flex;
+        &-jcaic, &-sbaic, &-seaic {
+            display: flex;
+        }
+    }
+
+    &-jc-aic, &-sb-aic, &-se-aic {
+        display: flex;
+    }
+}
+
+.flex-col {
+    flex-direction: column;
+    &-jcaic, &-sbaic, &-seaic {
+        flex-direction: column;
+    }
+}
+
+.flex-jc-aic,
+.flex-col-jcaic {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-sb-aic,
+.flex-col-sbaic {
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-se-aic,
+.flex-col-seaic {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+// quick border peek
+.bdr {
+  &__red {
+    border: 1px solid $white;
+    border-color: red;
+  }
+
+  &__blue {
+    border: 1px solid blue;
+  }
+}
+
+//helpers for overlay and other animations
+.fade-in {
+  animation: fade-in 300ms ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fade-out 300ms ease-in-out forwards;
+}
+
+// hide
+.d-none {
+  display: none;
+}
+
+// links
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: $white;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.button {
+  padding: 10px 20px;
+  background: linear-gradient(to right, $darkGreen, $lightGreen);
+  color: $white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+      opacity: 0.65;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+// animated checkmark
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-color: $veryDarkBrown;
+}
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #7ac142;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards
+}
+
+.checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px #7ac142;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards
+}
+// end 
+
+
+// hide for mobile + tablet
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+// hide for desktop
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
+
+
+
+
+
+
+

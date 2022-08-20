@@ -1,0 +1,183 @@
+{ "test": [
+        {
+            "accessibility": [
+                {
+                    "question_id": "1.1",
+                    "question": "Is the road leading to the nursery trafficable?",
+                    "marks": [0, 0.5]
+                },
+                {
+                    "question_id": "1.2",
+                    "question": "Is there a nursery sign post?",
+                    "marks": [0, 1]
+                },
+                {
+                    "question_id": "1.3",
+                    "question": "Does the nursery design allow easy movement of vehicles and people?",
+                    "marks": [0, 1]
+                }
+        ]
+        },
+        {
+            "seedling quality": [
+                {
+                    "question_id": "2.1",
+                    "question": "Are the seedlings well positioned/well centered in the pot relative to the root ball?",
+                    "marks": [0, 1, 2]
+                },
+                {
+                    "question_id": "2.2",
+                    "question": "Is there one plant per pot that is single, straight, sturdy and well centred in the pot?",
+                    "marks": [0, 1, 2]
+                },
+                {
+                    "question_id": "2.3",
+                    "question": "Is there absence of overgrown seedling in the nursery/seedling carried over from the previous season?",
+                    "marks": [0, 1, 2]
+                },
+                {
+                    "question_id": "2.4",
+                    "question": "is there a sign of root distortion?",
+                    "marks": [0, 1, 2, 3]
+                },
+                {
+                    "question_id": "2.5",
+                    "question": "Are the seedlings sorted into species and age?",
+                    "marks": [0, 1, 2]
+                },
+                {
+                    "question_id": "2.6",
+                    "question": "Is there a good ROOT: SHOOT ratio (1:2)?",
+                    "marks": [0, 1, 2, 3]
+                },
+                {
+                    "question_id": "2.7",
+                    "question": "Are the seed or transplant beds constructed at the recommended height(at least 30cm high) to facilitate proper root development?",
+                    "marks": [0, 1, 2]
+                },
+                {
+                    "question_id": "2.8",
+                    "question": "Is the nursery weeded and clean?",
+                    "marks": [0, 1, 2]
+                },
+                {
+                    "question_id": "2.9",
+                    "question": "Are there symptoms of nutrient deficiencies( Coloration)?",
+                    "marks": [0, 1, 2, 3,4,5]
+                },
+                {
+                    "question_id": "2.10",
+                    "question": "For nurseries raising seedlings that require pricking out; Is the transplanting of the germinants to the  growing beds/pots done with great care to prevent deformation of the root system?",
+                    "marks": [0, 1, 2, 3]
+                }
+        ]
+        },
+        {
+            "seedling health": [
+                {
+                    "question_id": "3.1",
+                    "question": "Are there incidences of plant pests and diseases??",
+                    "marks": [0, 1, 2, 3, 4, 5, 6, 7, 8]
+                },
+                {
+                    "question_id": "3.2",
+                    "question": "For any detected pests and diseases, were they reported to the relevant authorities e.g (KEFRI) and appropriate preventive measures control measures taken?",
+                    "marks": [0, 1, 2, 3, 4, 5, 6, 7, 8]
+                }
+            ]
+        },
+        {
+            "seedling care & maintenance":[
+                {"question_id":"4.1","question":"Are the young put under shade after pricking out?","marks":[0,1]},
+                {"question_id":"4.2","question":"is root pruning done frequently?","marks":[0,1]},
+              
+                {"question_id":"4.3","question":"Is hardening up done appropriately?","marks":[0,1]},
+                {"question_id":"4.4","question":"Are the seedlings well watered?","marks":[0,1]}
+            ]
+        },
+        {
+            "Record keeping":[
+                {"question_id":"5.1","question":"Are the seed and seedlings purchase records kept up to date E.g(date of receipt, supplier,species,Lot)?","marks":[0,1]},
+                {"question_id":"5.2","question":"Are the seed sowing and germination records/data recorderd?","marks":[0,1]},
+                {"question_id":"5.3","question":"Are the financial transactions recorded? E.g(payment vouchers,receipts,invoices)","marks":[0,1]},
+                {"question_id":"5.4","question":"Are the fertilizers, pesticides and fungicides used recorded?","marks":[0,1]},
+                {"question_id":"5.5","question":"Are there records of the nursery stock?","marks":[0,1]},
+                {"question_id":"5.6","question":"Are pests and diseases incidences records made?","marks":[0,1]},
+                {"question_id":"5.7","question":"Do they have an up to date vistors book?","marks":[0,1]},
+                {"question_id":"5.8","question":"Are activity records kept to date?","marks":[0,1]}
+            ]
+        },
+        {
+            "Nusery beds":[
+                {"question_id":"6.1","question":"Are the beds well aligned in the East - West direction ?","marks":[0,1]},
+                {"question_id":"6.2","question":"Are the beds constructed at the recommended height and width?","marks":[0,1]},
+                {"question_id":"6.3","question":"Is each bed clearly labeled with species and sowing details","marks":[0,1]},
+                {"question_id":"6.4","question":"Are the beds partitioned for easy stock taking as well as maintanance?","marks":[0,1]},
+                {"question_id":"6.5","question":"Is the shade  provided  to the seedling?","marks":[0,1]},
+                {"question_id":"6.6","question":"Are the beds used of the recommended sizes?","marks":[0,1]}
+            ]
+        },
+         {
+            "Growing media and potting":[
+                {"question_id":"7.1","question":"Are the pots used of the recommended sizes  ?","marks":[0,1]},
+                {"question_id":"7.2","question":"Does the tubes have perforations to allow for excess drainage?","marks":[0,1]},
+                {"question_id":"7.3","question":"Is the media cohensivefor transport","marks":[0,1]},
+                {"question_id":"7.4","question":"Is the soil ball around the roots stable?","marks":[0,1]}
+            ]
+        },
+         {
+            "General nursery hygiene/neatness":[
+                {"question_id":"8.1","question":"Is the nursery and it's surrounding tidy ?","marks":[0,1]},
+                {"question_id":"8.2","question":"Is there a rubbish pit? Is waste/Refuse disposed of in appropriate manner ?","marks":[0,1]}
+                ]
+        },
+        {
+            "Environment ":[
+                {"question_id":"9.1","question":"Are the  potting  materials disposed off in an appropriate manner? Doed the nursery recycle re-use or bury old polythene pots","marks":[0,1]},
+                {"question_id":"9.2","question":"Are there alternative/innovative potting materials used ?","marks":[0,1]},
+                {"question_id":"9.3","question":"Is there a waste disposal policy in place ?","marks":[0,1]},
+                {"question_id":"9.4","question":"Is there a chemical spillage policy in place ?","marks":[0,1]},
+                {"question_id":"9.5","question":"Are there signs or soil erosion in the nursery ?","marks":[0,1]}
+                ]
+        },
+         {
+            "Watering quality & quantity":[
+                {"question_id":"10.1","question":"Is the water used clean and clear of suspensions?","marks":[0,1]},
+                {"question_id":"10.2","question":"Are there adequate water storage facilities ?","marks":[0,1]},
+                {"question_id":"10.3","question":"Does the nursery have a reliable water supply source ?","marks":[0,1]},
+                {"question_id":"10.4","question":"Do they use the right watering equipments/tools ?","marks":[0,1]}
+                ]
+        },
+        {
+            "Nursery protection":[
+                {"question_id":"11.1","question":"Is there a fence to protect the nursery from animals and other intruders","marks":[0,1]},
+                {"question_id":"11.2","question":"Is the nursery protected from wind damage ?","marks":[0,1]},
+                {"question_id":"11.3","question":"Does the nursery quarantine plants  from other nurseries? Is ther isolation from other plants ?","marks":[0,1]}
+                ]
+        },
+        {
+            "Workers welfare":[
+                {"question_id":"12.1","question":" Are workers provided with appropriate clothing  and personal protective Equipment(PPE)?","marks":[0,1,2]},
+                {"question_id":"12.2","question":"Is dringking water provided  ?","marks":[0,1]},
+                {"question_id":"12.3","question":"Are the workers provided with some shade to carry out some operations ?","marks":[0,1]},
+                {"question_id":"12.4","question":"Is the ERGONOMICS taken into consideration in the working environment ?","marks":[0,1]},
+                {"question_id":"12.5","question":"Is there a toilet for workers and other vistors?","marks":[0,1]},
+                {"question_id":"12.6","question":"Is there a complete (well-stocked ) first aid kit in the nursery ?","marks":[0,1]},
+                {"question_id":"12.7","question":"Is there a trained first Aider with valid  training certificates ?","marks":[0,1]},
+                {"question_id":"12.8","question":"Are there formal employments contracts available for employees ?","marks":[0,1]},
+                {"question_id":"12.9","question":"Is the nursery surpervisor trained in Tree Nursery Management ?","marks":[0,1]}
+                ]
+        },
+        {
+            "stores":[
+                {"question_id":"13.1","question":"General appearance and cleanliness of storage area: Is the store well organized and are there shelves to clearly separate tools, safety equipment, chemicals, food etc? ","marks":[0,1]}
+                ]
+        },
+        {
+            "skills":[
+                {"question_id":"14.1","question":"Is the tools register up to date?","marks":[0,1]},
+                {"question_id":"14.2","question":"At least a certificate in forestry ?","marks":[0,1,2,3,4]}
+                ]
+        }
+    ]
+}

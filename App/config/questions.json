@@ -1,0 +1,264 @@
+{ "test": [
+        {
+            "accessibility": [
+                {
+                    "question_id": "1.1",
+                    "question": "Is the road leading to the nursery trafficable?",
+                    "marks": [0, 0.1, 0.2, 0.3, 0.4, 0.5]
+                },
+                {
+                    "question_id": "1.2",
+                    "question": "Is there a nursery sign post?",
+                    "marks": [0, 0.1, 0.2, 0.3, 0.4, 0.5]
+                },
+                {
+                    "question_id": "1.3",
+                    "question": "Does the nursery design allow easy movement of vehicles and people?",
+                    "marks": [0, 0.1, 0.2, 0.3, 0.4, 0.5]
+                }
+
+        ]
+        },
+        {
+            "seed source": [
+                {
+                    "question_id": "2.1",
+                    "question": "Are the seeds purchased from KEFRI recognized seed sources?",
+                    "marks": [0, 0.5, 1, 1.5, 2]
+                },
+                {
+                    "question_id": "2.2",
+                    "question": "Are the seeds properly labeled?",
+                    "marks": [0, 0.5, 1]
+                },
+                {
+                    "question_id": "2.3",
+                    "question": "Are the seeds true to type?",
+                    "marks": [0, 0.5, 1]
+                },
+                {
+                    "question_id": "2.4",
+                    "question": "Do you have seed storage facility?",
+                    "marks": [0, 0.5, 1]
+                }
+        ]
+        },
+        {
+            "seedling quality": [
+                {
+                    "question_id": "3.1",
+                    "question": "Are the seedlings well positioned/well centered in the pot relative to the root ball?",
+                    "marks": [0, 0.5, 1, 1.5, 2]
+                },
+                {
+                    "question_id": "3.2",
+                    "question": "Is there one plant per pot that is single, straight, sturdy and well centred in the pot?",
+                    "marks": [0, 0.5, 1, 1.5, 2]
+                },
+                {
+                    "question_id": "3.3",
+                    "question": "Is there absence of overgrown seedling in the nursery/seedling carried over from the previous season?",
+                    "marks": [0, 0.5, 1, 1.5, 2]
+                },
+                {
+                    "question_id": "3.4",
+                    "question": "Is there any signs of root distortions? Are the roots well balanced and developed with no coiling in the pots? Is there satisfactory root plug development?",
+                    "marks": [0, 0.5, 1, 1.5, 2, 2.5, 3]
+                },
+                {
+                    "question_id": "3.5",
+                    "question": "Are the seedlings sorted?",
+                    "marks": [0, 0.5, 1, 1.5, 2]
+                },
+                {
+                    "question_id": "3.6",
+                    "question": "Is there a good Root: Shoot ratio (1:2)? Are ready seedlings having the shoot twice the root in height?",
+                    "marks": [0, 0.5, 1, 1.5, 2, 2.5, 3]
+                },
+                {
+                    "question_id": "3.7",
+                    "question": "Are the seed or transplant beds constructed at the recommended height(at least 30cm high) to facilitate proper root development?",
+                    "marks": [0, 0.5, 1, 1.5, 2]
+                },
+                {
+                    "question_id": "3.8",
+                    "question": "Is the nursery weeded? Free from weeds?",
+                    "marks": [0, 0.5, 1, 1.5, 2]
+                },
+                {
+                    "question_id": "3.9",
+                    "question": "Are there symptoms of nutrient deficiencies(Coloration)?",
+                    "marks": [0, 0.5, 1, 1.5, 2, 2.5, 3]
+                },
+                {
+                    "question_id": "3.10",
+                    "question": "For Nurseries raising, Eucalyptus, Pinus patula Grevelia robusta, Grevilea robusta: Is transplanting of the germinated seedlings (pricking out) to the growing beds/pots done with great care to prevent deformation of the root system? ",
+                    "marks": [0, 0.5, 1, 1.5, 2, 2.5, 3]
+                }
+        ]
+        },
+        {
+            "seedling health": [
+                {
+                    "question_id": "4.1 a",
+                    "question": "Are there incidences of plant pests of commercial species 1?",
+                    "marks": [0, 0.5, 1, 1.5, 2, 2.5, 3]
+                },
+                {
+                    "question_id": "4.1 b",
+                    "question": "Are there incidences of plant pests of commercial species 2?",
+                    "marks": [0, 0.5, 1, 1.5, 2, 2.5, 3]
+                },
+                {
+                    "question_id": "4.1 c",
+                    "question": "Are there incidences of plant pests of commercial species 3?",
+                    "marks": [0, 0.5, 1, 1.5, 2, 2.5, 3]
+                },
+                {
+                    "question_id": "4.1 d",
+                    "question": "Are there incidences of plant pests of commercial species 4?",
+                    "marks": [0, 0.5, 1, 1.5, 2, 2.5, 3]
+                },
+                {
+                    "question_id": "4.1 e",
+                    "question": "Are there incidences of plant pests of commercial species 5?",
+                    "marks": [0, 0.5, 1, 1.5, 2, 2.5, 3]
+                },
+                {
+                    "question_id": "4.2 a",
+                    "question": "Are there incidences of plant diseases of commercial species 1?",
+                    "marks": [0, 0.5, 1, 1.5, 2, 2.5, 3]
+                },
+                {
+                    "question_id": "4.2 b",
+                    "question": "Are there incidences of plant diseases of commercial species 2?",
+                    "marks": [0, 0.5, 1, 1.5, 2, 2.5, 3]
+                },
+                {
+                    "question_id": "4.2 c",
+                    "question": "Are there incidences of plant diseases of commercial species 3?",
+                    "marks": [0, 0.5, 1, 1.5, 2, 2.5, 3]
+                },
+                {
+                    "question_id": "4.2 d",
+                    "question": "Are there incidences of plant diseases of commercial species 4?",
+                    "marks": [0, 0.5, 1, 1.5, 2, 2.5, 3]
+                },
+                {
+                    "question_id": "4.2 e",
+                    "question": "Are there incidences of plant diseases of commercial species 5?",
+                    "marks": [0, 0.5, 1, 1.5, 2, 2.5, 3]
+                },
+                {
+                    "question_id": "4.3",
+                    "question": "For any pests, were they reported to the relevant authorities (KEFRI) and appropriate preventive and control measures taken?",
+                    "marks": [0, 0.5, 1, 1.5, 2]
+                },
+                {
+                    "question_id": "4.4",
+                    "question": "For any diseases, were they reported to the relevant authorities (KEFRI) and appropriate preventive and control measures taken?",
+                    "marks": [0, 0.5, 1, 1.5, 2]
+                },
+                {
+                    "question_id": "4.5",
+                    "question": "Are there any management system, knowledge or effort to control pest and diseases?",
+                    "marks": [0, 0.5, 1, 1.5, 2]
+                }
+            ]
+        },
+        {
+            "seedling care & maintenance":[
+                {"question_id":"5.1","question":"Are young seedlings put under shade after pricking out?","marks":[0, 0.5, 1]},
+                {"question_id":"5.2","question":"Are the seedlings well watered?","marks":[0, 0.5, 1]},
+                {"question_id":"5.3","question":"Is root pruning done frequently?","marks":[0, 0.5, 1]},
+              
+                {"question_id":"5.4","question":"Is the nursery weeded? Free from weeds?","marks":[0, 0.5, 1]},
+                {"question_id":"5.5","question":"Is hardening up properly done?","marks":[0, 0.5, 1]}
+            ]
+        },
+        {
+            "Record keeping":[
+                {"question_id":"6.1","question":"Are the seed and seedlings purchase records kept up to date? E.g(date of receipt, supplier,species, Lot No. etc.)","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"6.2","question":"Are the seed sowing and germination records/data recorderd?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"6.3","question":"Are the financial transactions recorded? E.g(payment vouchers, receipts, invoices etc)","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"6.4","question":"Are activity records kept to date?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"6.5","question":"Are fertilizers, pesticides and fungicides used recorded?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"6.6","question":"Are pests and diseases incidences records made?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"6.7","question":"Are there records of the nursery stock?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"6.8","question":"Do they have an up to date vistors book?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]}
+                
+            ]
+        },
+        {
+            "Nusery beds":[
+                {"question_id":"7.1","question":"Are the beds well aligned in the East - West direction?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"7.2","question":"Are the beds constructed at the recommended height and width?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"7.3","question":"Is each bed clearly labeled with species and sowing details","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"7.4","question":"Are the beds partitioned for easy stock taking as well as maintenance?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"7.5","question":"Is the shade provided to the seedlings?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"7.6","question":"Are the beds free of weeds?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]}
+            ]
+        },
+         {
+            "Growing media and potting":[
+                {"question_id":"8.1","question":"Are the pots used of the recommended sizes?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"8.2","question":"Do the tubes have perforations to allow for excess drainage?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"8.3","question":"Is the media freely draining? ","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"8.4","question":"Is the media cohensive for transport?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"8.5","question":"Is the soil ball around the roots stable?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]}
+            ]
+        },
+         {
+            "General nursery hygiene/neatness":[
+                {"question_id":"9.1","question":"Is the nursery and it's surrounding clean and tidy?","marks":[0, 0.5, 1]},
+                {"question_id":"9.2","question":"Is there a rubbish pit? Is waste/refuse disposed of in appropriate manner?","marks":[0, 0.5, 1]},
+                {"question_id":"9.3","question":"Is the nursery well drained?","marks":[0, 0.5, 1]}
+                ]
+        },
+        {
+            "Environment ":[
+                {"question_id":"10.1","question":"Are there alternative/innovative potting materials used in the nursery?","marks":[0, 0.5, 1]},
+                {"question_id":"10.2","question":"Are the  potting  materials disposed off in an appropriate manner? Does the nursery recycle, re-use or bury old polythene pots","marks":[0, 0.5, 1]},
+                {"question_id":"10.3","question":"Are there signs or soil erosion in the nursery ?","marks":[0, 0.5, 1]}
+                ]
+        },
+         {
+            "Watering quality & quantity":[
+                {"question_id":"11.1","question":"Is the water used clean and clear of suspensions?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"11.2","question":"Are there adequate water storage facilities?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"11.3","question":"Does the nursery have a reliable water supply source?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"11.4","question":"Do they use the right watering equipments/tools?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]}
+                ]
+        },
+        {
+            "Nursery protection":[
+                {"question_id":"12.1","question":"Is there a fence to protect the nursery from animals and other intruders","marks":[0, 0.5, 1]},
+                {"question_id":"12.2","question":"Is the nursery protected from wind damage?","marks":[0, 0.5, 1]},
+                {"question_id":"12.3","question":"Does the nursery quarantine plants from other nurseries? Is there isolation from other plants?","marks":[0, 0.5, 1]}
+                ]
+        },
+        {
+            "Workers welfare":[
+                {"question_id":"13.1","question":" Are workers provided with appropriate clothing and personal protective Equipment(PPE)?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"13.2","question":"Is drinking water provided?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"13.3","question":"Are the workers provided with some shade to carry out some operations?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"13.4","question":"Is the ERGONOMICS taken into consideration in the working environment?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"13.5","question":"Is there a toilet for workers and other vistors?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"13.6","question":"Is there a complete (well-stocked) first aid kit in the nursery?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"13.7","question":"Is there a trained First Aider with valid  training certificates?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]},
+                {"question_id":"13.8","question":"Are employment contracts available for employees? Is a signed copy of the formal work contract available?","marks":[0, 0.1, 0.2, 0.3, 0.4, 0.5]}
+                ]
+        },
+        {
+            "stores":[
+                {"question_id":"14.1","question":"General appearance and cleanliness of storage area: Is the store well organized and are there shelves to clearly separate tools, safety equipment, chemicals, food etc? ","marks":[0, 0.5,1, 1.5, 2]},
+                {"question_id":"14.2","question":"Is the tools register kept up to date?","marks":[0, 0.5, 1]}
+                ]
+        },
+        {
+            "skills":[
+                {"question_id":"15.1","question":"Evidence of having attended a training in nursery management from a recognized institution?","marks":[0, 0.5, 1, 1.5, 2, 2.5,3]}
+                ]
+        }
+    ]
+}

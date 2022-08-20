@@ -1,0 +1,31 @@
+
+.forbidden {
+    height: 100%;
+    width: 100%;
+    
+    h1 {
+        color: $tileFail;
+        margin-bottom: 40px;
+    }
+
+    &__image {
+        width: 80%;
+        height: 70%;
+        
+        background-image: url('../App/images/forbidden.svg');
+        background: {
+            position: center;
+            size: contain;
+            repeat: no-repeat;
+        }
+    }
+
+    a {
+        color: $white;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 20px;
+        height: 20px;
+        font-size: $font-sm;
+    }
+}

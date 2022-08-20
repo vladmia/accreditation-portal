@@ -1,0 +1,106 @@
+.species__container {
+  .group {
+    width: 100%;
+    min-height: 70vh;
+    overflow-y: scroll;
+    // border: 1px solid red;
+   
+    .species-group {
+      padding: 3px 0 7px 0;
+      height: 50px;
+      position: relative;
+      margin-bottom: 10px;
+      border-bottom: 1px solid $errorBorder;
+
+      &.emails {
+        padding: {
+          left: 5px;
+          right: 5px;
+        }
+      }
+      input.eval__email {
+        width: 70%;
+      }
+
+      input,
+      select {
+        width: 20%;
+        height: 40px;
+        border-radius: 40px;
+        border: 1px solid $formTitle;
+        padding-left: 10px;
+        &:not(:nth-child(5)) {
+          margin-right: 20px;
+        }
+        font: {
+          size: $font-sm;
+        }
+        color: $formInput;
+      }
+
+      select {
+        color: $placeHolder;
+
+        &.read {
+          color: $formInput;
+        }
+
+        &.write {
+          color: $placeHolder;
+        }
+      }
+
+      button {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 60px;
+        top: 0;
+        margin-top: 3px;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px $darkBrown;
+        cursor: pointer;
+        font: {
+          size: 40px;
+        }
+
+        &.minus {
+          color: red;
+          right: 70px;
+
+          &.emails {
+            right: 75px;
+          }
+        }
+        &.add {
+          color: green;
+          right: 2px;
+
+          &.emails {
+            right: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  &.emails {
+    width: 100%;
+    min-height: 30vh;
+    justify-self: start;
+    align-self: start;
+
+    .group {
+      width: 60%;
+      padding-left: 30px;
+    }
+  }
+
+  .button {
+    border: none;
+
+  }
+}

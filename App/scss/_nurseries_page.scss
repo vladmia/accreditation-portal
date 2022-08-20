@@ -1,0 +1,361 @@
+.app.certified__nurseries {
+  width: 90%;
+  overflow: visible;
+  margin-top: 30px;
+
+  .app {
+    &__header {
+      // background: rgba(102, 213, 136, .07);
+      background: $veryDarkBrown;
+      border: none;
+      position: relative;
+      p {
+        color: $white;
+        @include breakpoint-down(medium) {
+          text-align: center;
+        }
+        @include breakpoint-down(small) {
+          display: none;
+        }
+      }
+
+      @include breakpoint-down(small) {
+        border-radius: 10px;
+        border-bottom: {
+          left-radius: 0;
+          right-radius: 0;
+        }
+
+        &::before {
+          position: absolute;
+          height: auto;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          padding: 10px 0px;
+          content: "Certified Nurseries";
+          color: $white;
+          font-weight: 400;
+          font-size: $font-md;
+          text-align: center;
+        }
+      }
+    }
+
+    &__table {
+      border-left: 1px dotted $lightGrey;
+      border-right: 1px dotted $lightGrey;
+    }
+    &__content {
+      overflow: scroll;
+      min-height: 700px;
+
+      @include breakpoint-down(small) {
+        overflow: scroll;
+        min-height: 500px;
+        height: 500px;
+      }
+
+      & .app__table tr.data {
+
+        td i {                   ///////   removables
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: $veryDarkBrown;
+        }
+        @include breakpoint-up(medium) {
+          td span.label {
+            display: none;
+          }
+        }
+        @include breakpoint-down(small) {
+          box-shadow: 0px 0px 3px $mask;
+          padding: 0px;
+          border-radius: 20px;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          margin-bottom: 30px;
+          border-bottom: none;
+          position: relative;
+
+          td.count {
+            position: relative;
+            padding: 15px 0;
+            span {
+              padding: 5px 11px;
+              border-radius: 50%;
+              background: $kefri_brown;
+              color: $white;
+              font-size: $font-md;
+              font-weight: 600;
+              box-shadow: 0px 4px 5px $mask;
+              &.cell_info {
+                display: none;
+              }
+            }
+
+            &::before {
+              position: absolute;
+              bottom: 50%;
+              left: 25%;
+              width: 10%;
+              height: 2px;
+              border-radius: 2px;
+              box-shadow: 0px 4px 5px $lightGrey;
+
+              background: $lightGrey;
+              content: "";
+            }
+            &::after {
+              position: absolute;
+              bottom: 50%;
+              right: 25%;
+              width: 10%;
+              height: 2px;
+              border-radius: 2px;
+              box-shadow: 0px 4px 5px $lightGrey;
+
+              background: $lightGrey;
+              content: "";
+            }
+          }
+
+          td,
+          td.btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            &:not(td.count) {
+              > span {
+                padding: 5px 0;
+                &.label {
+                  color: $veryDarkBrownOp;
+                  background: linear-gradient(
+                    45deg,
+                    $kefri_brownOp,
+                    $kefri_greenOp
+                  );
+                  width: 60%;
+                  border-radius: 100px;
+                  position: relative;
+
+                  &::before {
+                    position: absolute;
+                    width: 30%;
+                    height: 2px;
+                    border-radius: 2px;
+                    bottom: 0;
+                    left: 50%;
+                    background: $white;
+                    transform: translateX(-50%);
+                    content: "";
+                  }
+                }
+                &.cell_info {
+                  color: $veryDarkBrown;
+                  font-size: $font-sm;
+                  font-weight: 400;
+
+                  i {                   ///////   removables
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background: $veryDarkBrown;
+                  }
+                }
+              }
+            }
+          }
+          td span.label {
+            display: block;
+          }
+        }
+
+        @include breakpoint-down(small) {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+
+          &.hide {
+            display: none;
+          }
+        }
+      }
+
+      & .app__table tr.selected {
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          left: 0;
+          width: 3%;
+          height: 60%;
+          background-image: url("../App/images/badge.svg");
+          background: {
+            position: center;
+            size: contain;
+            repeat: no-repeat;
+          }
+        }
+      }
+
+      & .app__table tr.app__empty {
+        td {
+          width: 70%;
+        }
+
+        @include breakpoint-down(medium) {
+          justify-content: flex-start;
+        }
+
+        @include breakpoint-down(small) {
+          justify-content: flex-start;
+          td.image {
+            height: 60%;
+            width: 90%;
+          }
+          td.message {
+            height: 10%;
+          }
+        }
+      }
+
+      & .app__table td.count {
+        width: 10%;
+      }
+
+      & .app__table div.species__cont {
+        border: none;
+        border-top: none;
+
+        //   border-radius: 10px;
+        width: 100%;
+        min-height: 30px;
+        box-shadow: 0px 2px 2px $lightGrey;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1.5fr 9fr;
+        grid-gap: 2px;
+        transition: all 0.4s ease;
+        z-index: 1;
+        animation: showAnim 0.4s ease forwards;
+
+        @include breakpoint-down(small) {
+          margin-top: -30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          background: $white;
+          margin-bottom: 15px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+        }
+
+        &.hide {
+          animation: hideAnim 0.4s ease forwards;
+          display: none;
+        }
+
+        @keyframes hideAnim {
+          from {
+            opacity: 1;
+            display: grid;
+          }
+          to {
+            opacity: 0;
+            display: none;
+          }
+        }
+
+        @keyframes showAnim {
+          from {
+            opacity: 0;
+            display: none;
+          }
+          to {
+            opacity: 1;
+            display: grid;
+          }
+        }
+
+        & div.spec__mask {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          border-radius: 10%;
+          z-index: 2;
+        }
+
+        & p.species__caption {
+          top: 0;
+          left: 0;
+          padding: 0px 15px;
+          height: 100%;
+          background: $veryDarkBrownOp;
+          color: white;
+          position: relative;
+          font: {
+            size: $font-sm;
+            weight: 400;
+          }
+          &::before {
+            content: "Species Available";
+            position: absolute;
+            text-align: center;
+          }
+
+          @include breakpoint-down(small) {
+            width: 100%;
+            height: 25px;
+            // border-top-right-radius: 20px;
+          }
+        }
+
+        & .species__content {
+          right: 0;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          grid-gap: 5px;
+          justify-content: space-evenly;
+          align-items: center;
+          padding: 2px 10px;
+
+          @mixin unselectable() {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+          }
+
+          p {
+            @include unselectable();
+          }
+
+          p i.bullet {
+            font-size: $font-xsm;
+          }
+
+          @include breakpoint-down(small) {
+            grid-template-columns: 1fr 1fr 1fr;
+          }
+        }
+      }
+    }
+
+    &__header p.count {
+      width: 10%;
+    }
+  }
+}

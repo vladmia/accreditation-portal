@@ -1,0 +1,533 @@
+.report__container {
+  min-height: 100vh;
+  width: 100%;
+  color: $formInput;
+  font-size: $font-xsm;
+  //   margin-top: 30px;
+  position: absolute;
+
+  &.feedback {
+    min-height: 90vh;
+    top: 10vh;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    // border: 1px solid red;
+    background: $whiteOp;
+    
+  }
+
+  &.cert {
+    border: 1px solid $mask;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+    overflow: hidden;
+    z-index: 0;
+    background: linear-gradient(45deg, $kefri_greenOp, $kefri_brownOp);
+
+    .corner {
+      border: 1px solid $white;
+      background: $white;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      z-index: 2;
+
+      &.one {        
+        top: -2px;
+        left: -2px;
+        border: {
+          right: 1px solid $mask;
+          bottom: 1px solid $mask;
+        }
+      }
+      &.two {
+        top: -2px; 
+        right: -2px;
+        border: {
+          left: 1px solid $mask;
+          bottom: 1px solid $mask;
+        }
+      }
+      &.three {
+        bottom: -2px; 
+        left: -2px;
+        border: {
+          right: 1px solid $mask;
+          top: 1px solid $mask;
+        }
+      }
+      &.four {
+        bottom: -2px; 
+        right: -2px;
+        border: {
+          left: 1px solid $mask;
+          top: 1px solid $mask;
+        }
+      }
+      
+      .tiny {
+        // border: 1px solid $mask;
+        width: 10px;
+        height: 10px;
+        background: $kefri_brownOp;
+      }
+
+      
+    }
+  
+    
+    .water__mark {
+      width: 500px;
+      height: 500px;
+      position: absolute;
+      background: {
+        image: url('../App/images/water_mark.svg');
+        position: center;
+        size: contain;
+        repeat: no-repeat;
+      }
+
+      &.one {
+        width: 600px; 
+        height: 600px;
+        top: 30%;
+        left: 60%;
+      }
+      &.two {
+        width: 800px;
+        height: 800px;
+        top: 0;
+        left: 40%;
+      }
+      &.three {
+        width: 800px;
+        height: 800px;
+        top: 20%;
+        left: -40%;
+      }
+    }
+    .cert__data {
+      width: 70%;
+      height: 100%;
+      // border: 1px solid black;
+      padding-left: 20px;
+      justify-content: space-evenly;
+      align-items: start;
+
+      .reg {
+      
+          color: $veryDarkBrown;
+          font: {
+            size: $font-xsm;
+            weight: 600;
+          }
+        
+        span {
+          color: $formInput;
+          font: {
+            size: 8px;
+            weight: 100;
+          }
+        }
+        
+      }
+
+      .certifying__body {
+        width: 100%;
+        height: auto;
+        justify-content: start;
+        align-items: center;
+
+        .kefri__logo {
+          width: 100px;
+          height: 100px;
+          // border: 1px solid $dark;
+          border-radius: 50%;
+          background-image: url('../App/images/kefri_logo.png');
+          background: {
+            position: center;
+            size: contain;
+            repeat: no-repeat;
+          }
+        }
+
+        p.name {
+          font-size: 20px;
+          font-weight: 900;
+          color: $veryDarkBrown;
+          margin-left: 10px;
+        }
+      }
+
+      .cert__title {
+        font-family: 'Pinyon Script', cursive;
+        color: $veryDarkBrown;
+        font: {
+          size: 30px;
+          weight: 600;
+        }
+        margin-left: 160px;
+        margin-top: -30px;
+      }
+
+      .date {
+        margin: 20px 0;
+        font-size: $font-xsm;
+      }
+
+      .awardee__details {
+        justify-content: flex-start;
+        align-items: start;
+        width: 100%;
+
+        p {
+          font-size: $font-md;
+          margin-bottom: 20px;
+          color: $veryDarkBrown;
+        }
+
+        .title {
+          font-size: $font-md;
+          
+        }
+
+        .nursery__owner, .nursery__name {
+          font-weight: 600;
+        }
+
+        .nursery__name {
+          text-transform: uppercase;
+        }
+
+     
+
+      }
+
+      .signed__by {
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .signature {
+          height: 30px;
+          border-bottom: 1px solid $veryDarkBrown;
+          width: 40%;
+          margin-bottom: 10px;
+        }
+
+        .director__info {
+          color: $veryDarkBrown;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
+      }
+    
+    }
+
+    .honoraries {
+      width: 30%;
+      height: 100%;
+      justify-content: flex-end;
+      align-items: center;
+
+      .badge {
+        width: 25%;
+        height: 80%;
+        // border: 1px solid blue;
+        position: absolute;
+        top: 0;
+        right: 50px;
+       
+        &.class-1 {
+          background: url('../App/images/gold_tag.svg');
+        }
+        &.class-2 {
+          background: url('../App/images/silver_tag.svg');
+        }
+        &.class-3 {
+          background: url('../App/images/bronze_tag.svg');
+        }
+
+        &.class-1, &.class-2, &.class-3 {
+          background: {
+            size: contain;
+            repeat: no-repeat;
+            position: center;
+          }
+        }
+      }
+
+      .rating {
+        width: 25%;
+        height: auto;
+        position: absolute;
+        top: 15%;
+        right: 48px;
+        i {
+          // display: inline-block; //removables
+          // width: 20px; //removables
+          // height: 20px; //removables              
+          // background: $lightGrey; //removables
+          // border-radius: 50%;  //removables
+          
+          margin-right: 3px;
+          color: $lightGrey;
+          font-size: $font-sm;
+          
+          &.active {
+            // background: $gold; //removables
+            color: $gold;
+          }
+        }
+
+
+      }
+      
+      .verified {
+        margin-bottom: 50px;
+        margin-right: 40px;
+        width: 100%;
+        text-align: center;
+        // border: 1px solid red;
+      }
+    }
+
+  }
+
+  p.btn,
+  td.btn {
+    &:last-child, &.viewMore {
+      display: none;
+    }
+  }
+
+  .app__content,
+  .app__table {
+    height: auto;
+    z-index: 0;
+
+    table tr {
+      height: 30px;
+      &:nth-child(even) {
+        background: $trBack;
+      }
+    }
+  }
+
+  .app__header {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    z-index: 1;
+    background: $trBack;
+    border: none;
+    padding: 5px;
+    // overflow: scroll;
+
+    p {
+      position: relative;
+      //   border: 1px solid blue;
+      &:after {
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 2px;
+        background: $lightGrey;
+        border-radius: 2px;
+        bottom: 0;
+      }
+    }
+  }
+
+  .app__content {
+    overflow: hidden;
+    margin-top: 80px;
+  }
+
+  .feedback__section {
+    width: 98%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px $veryDarkBrownOp;
+    margin-bottom: 10px;
+    overflow: hidden;
+
+    .section__title {
+      width: 100%;
+      padding: 2px 0;
+      font-size: $font-sm;
+      font-weight: 600;
+      margin: 5px 0;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+        background: $trBack;
+        width: 50px;
+        height: 4px;
+        bottom: -10px;
+      }
+    }
+    
+    .feedback__content {
+      width: 100%;
+      font-weight: 400;
+      border-top: 1px solid $trBack;
+      position: relative;
+
+      & .obs__title {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .obs__cont, .recc__cont {
+        font-size: $font-sm;
+
+        p {
+          padding: 5px 10px;
+          margin-bottom: 5px;
+          height: 70px;
+          align-items: flex-start;
+        }
+      }
+
+      .obs__cont {
+        justify-content: flex-end;
+        width: 30%;
+        background: $trBack;
+        
+        p {
+          justify-content: flex-end;
+          color: $veryDarkBrownOp;
+          border-right: 4px solid $kefri_brown;
+          border-bottom: 1px solid $trBack;
+        }
+      }
+      .recc__cont {
+        justify-content: flex-start;
+        width: 70%;
+        background: $white;
+        font-size: $font-sm;
+        
+        p {
+          color: $formInput;
+          border-bottom: 1px solid $trBack;
+          justify-content: flex-start;
+          
+        }
+      }
+    }
+  }
+}
+
+p.print {
+  z-index: 2;
+  position: fixed;
+  font-weight: 400;
+  font-size: $font-sm;
+  cursor: pointer;
+
+  &:not(.feedback) {
+    padding: 2px 4px;
+    color: blue;
+    border: none;
+    border-radius: 30px;
+    padding: 2px 5px;
+    top: 3px;
+    left: 30px;
+
+    text-decoration: underline;
+
+    &:hover {
+      background: $lightGrey;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+  &.feedback {
+    color: $dark;
+    top: 5px;
+    left: 10px;
+    z-index: 5;
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: scale(1.05, 1.05);
+    }
+  }
+
+  &.cert {
+    left: 50px;
+    font-size: $font-xsm;
+  }
+}
+
+.report__title {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  // text-align: center;
+  height: 30px;
+  background: $white;
+  color: $formInput;
+  font-size: $font-md;
+  font-weight: 600;
+  // border: 1px solid blue;
+  text-transform: capitalize;
+
+  &.feedback {
+    background: $whiteOpHeader;
+    border-top: 1px solid $mask;
+    border-bottom: 1px solid $mask;
+    color: $veryDarkBrownOp;
+    height: 10vh;
+    z-index: 4;
+
+    p.main__title {
+      font-size: $font-lg;
+      padding: 4px 0px;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 30%;
+        background: $trBack;
+        height: 4px;
+        bottom: 0;
+      }
+    }
+
+
+    .nurs__details {
+      width: 100%;
+      padding: 5px 20px;
+
+      p {
+        width: 40%;
+        text-align: left;
+        font-size: $font-sm;
+        & label {
+          font: {
+            weight: 400;
+            size: $font-xsm;
+          };
+          color: $formInput;
+        }
+
+        & span {
+          color: $veryDarkBrownOp;
+        }
+
+        &:nth-child(2) {
+          width: 20%;
+          text-align: right;
+          
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+<div class="app">
+  <div class="app__controls flex-sb-aic">
+    <div class="set__filter flex-sb-aic">
+      <div>
+        <label>Filter by: </label>
+        <select class="app__filter" id="">
+          <option value="all">All</option>
+          <option value="dateSpec">Specific Date</option>
+          <option value="dateRange">Date Range</option>
+        </select>
+      </div>
+
+      <div class="select__all">
+        <input type="text" value="No filter" disabled />
+      </div>
+      <div class="select__date range hide flex-sb-aic">
+        <div class="date__container">
+          <label for="">From</label>
+          <input type="date" />
+        </div>
+        <div class="date__container">
+          <label for="">To</label>
+          <input type="date" />
+        </div>
+      </div>
+      <div class="select__date spec hide flex-sb-aic">
+        <div class="date__container">
+          <label for="">Choose</label>
+          <input type="date" />
+        </div>
+      </div>
+
+      <button class="button apply__filter">Filter</button>
+    </div>
+
+    <div class="search flex-jc-aic">
+      <span class="flex-jc-aic"><i class="fa fa-search"></i></span>
+      <input type="text" />
+    </div>
+  </div>
+  <div class="app__header flex-sb-aic">
+    <p class="flex">Reg. Number</p>
+    <p class="flex">Nursery Name</p>
+    <p class="flex">Manager</p>
+    <p class="flex">Date Registered</p>
+    <p class="flex">Click to apply</p>
+  </div>
+  <div class="app__content">
+    <table class="app__table">
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+  <div class="app__guide hide flex-col">
+    <span class="close__guide">&times;</span>
+    <p class="guide__head flex-jc-aic">Application for Certification Guide</p>
+    <p class="guide__one">Nurseries appearing here are yet to be applied for certification. Click the <span class="button">apply</span> button next to any nursery in order to have it applied for certification.</p>
+    <p class="guide__one"><strong>NOTE: </strong>Clicking the <span class="button">apply</span> button next to a nursery means you have that nursery ready for inspection for it to get certified.</p>
+    <p class="guide__two">Nurseries appearing with a <span class="button">Re-apply</span> button next to them are those which did not pass for certification after inspection. You can click the <span class="button">Re-apply</span> button in order to apply them for certification again after meeting the required directives from the inspection feedback.</p>
+    <p class="guide__three">You can choose to apply any nursery for certification at your own time after registration.</p>
+  </div>
+</div>
+
+<div class="zero__content flex-col-jcaic hide">
+  <p class="zero__content__title t-center">
+    There are no nurseries awaiting to be applied for certification currently
+  </p>
+  <button type="button" class="button registerNursery">Register a nursery</button>
+  <div class="zero__content__image"></div>
+</div>
+

@@ -1,0 +1,30 @@
+@page {
+    margin: 10px;
+}
+
+.container {
+    display: none;
+}
+
+.reg__container {
+    margin: 0;
+}
+
+.report__title.feedback {
+    position: relative;
+}
+
+.report__container.feedback {
+ 
+}
+
+.report__container.feedback {
+    position: relative;
+    top: 10px;
+    padding-top: 0;
+}
+
+
+
+
+

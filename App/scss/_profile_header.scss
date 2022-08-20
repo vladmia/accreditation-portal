@@ -1,0 +1,82 @@
+.profile {
+    &__header {
+        height: 60px;
+        // background: $dark;
+        background: linear-gradient(to bottom, $kefri_green, $kefri_brown);
+        padding: 5px 20px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        // border-bottom: 1px solid $kefri_green;
+    }
+
+    &__title {
+        position: absolute;
+        left: 180px;
+
+        & > span {
+            font: {
+            size: $font-md;
+            weight: 600;
+            }
+
+            &:first-child {
+                display: inline-block;
+                margin-right: 10px;
+                width: 10px;
+                height: 10px;
+                background: {
+                    image: url('../App/images/point.svg');
+                    position: center;
+                    repeat: no-repeat;
+                    size: contain;
+                }
+                
+            }
+        }
+    }
+
+    &__info {
+        width: 250px;
+        height: 100%;
+    }
+
+    &__pic {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        // background: $white;
+        font-size: $font-lg;
+    }
+
+    &__details {
+        width: 150px;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: start;
+
+        .username {
+            font: {
+                weight: 600;
+            }
+        }
+
+        .role {
+            color: $whiteOp;
+        }
+    }
+
+    &__logout {
+        width: 30px;
+        height: 30px;
+        // background: $lightGreen;
+        border-radius: 50%;
+        color: $white;
+        cursor: pointer;
+        font-size: $font-lg;
+
+        &:hover {
+            color: $veryDarkBrownOp;
+        }
+    }
+}

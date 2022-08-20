@@ -1,0 +1,346 @@
+.login__mask {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    -145deg,
+    $kefri_brown,
+    $kefri_green 70% 100%
+  );
+  // background: red;
+}
+.login__container {
+  width: 90%;
+  height: 90vh;
+  background: $whiteOp;
+  border-radius: 30px;
+  position: relative;
+  box-shadow: 0px 0px 10px $mask;
+  overflow: hidden;
+
+
+  @include breakpoint-down(small) {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  a.__home {
+    .fa-home {
+      color: $kefri_brown;
+    }
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 2;
+    border-bottom: 2px solid $kefri_brown;
+    line-height: 2;
+    color: $kefri_brown;
+
+    @include breakpoint-down(small) {
+      top: 5px;
+    }
+  }
+
+  .login {
+    &__image__cont {
+      width: 50%;
+      height: 100%;
+      background: $whiteOp;
+      // background-image: linear-gradient(
+      //   to bottom,
+      //   $kefri_green,
+      //   $kefri_brown 30% 100%
+      // );
+
+
+  @include breakpoint-down(medium) {
+    width: 100%;
+    background: transparent;  
+  }
+
+  @include breakpoint-down(small) {
+    height: auto;
+    margin: 70px 0px 0px 0px;
+
+    &.reg {
+      display: none;
+    }
+  }
+
+  @include breakpoint-down(xsmall) {
+    display: none;
+  }
+      .login__image {
+        position: relative;
+        height: 200px;
+        width: 200px;
+        background: $kefri_brown;
+        // background-image: linear-gradient(
+        //   to bottom,
+        //   $whiteOp,
+        //   $kefri_brown 70% 100%
+        // );
+        border-radius: 50%;
+        overflow: visible;
+        // margin-left: 30px;
+        // z-index: 0;
+        @include breakpoint-down(medium) {
+          width: 150px;
+          height: 150px;
+        }
+
+        @include breakpoint-down(small) {
+          width: 100px;
+          height: 100px;
+          margin-left: 0;
+        }
+       
+
+        &::after {
+          content: "";
+          position: absolute;
+          // background: rgba(230, 184, 184, 0.05);
+          // background: $whiteOp;
+          background: url("../App/images/seedling_svg.svg");
+          background: {
+            position: center;
+            size: 110%;
+            repeat: no-repeat;
+          }
+          width: 150%;
+          height: 150%;
+          border-radius: 50%;
+          overflow: visible;
+          bottom: 0;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 105%;
+          height: 105%;
+          border-radius: 50%;
+          border: 0.1px solid $kefri_brown;
+          // z-index: 1;
+        }
+      }
+
+      p {
+        width: 100%;
+        margin-top: 30px;
+        font-weight: 600;
+        font-size: $font-md;
+        text-align: center;
+        color: $kefri_brown;
+      }
+    }
+
+    &__form {
+      width: 50%;
+      height: 100%;
+      padding: 20px;
+      position: relative;
+
+      @include breakpoint-down(medium) {
+        padding: 15px;
+        width: 70%;
+      }
+
+      @include breakpoint-down(small) {
+        padding: 15px;
+        width: 100%;
+        height: 60%;
+
+        &.reg {
+          margin-top: 20px;
+          height: 100%;
+          overflow: scroll;
+        }
+      }
+
+      @include breakpoint-down(xsmall) {
+        &.reg {
+          margin-top: 10px;
+          height: 80%;
+        }
+      }
+
+      .login {
+        &__header {
+          color: $veryDarkBrownOp;
+          margin: 0 0 30px 0;
+          font: {
+            size: $font-md;
+            weight: 300;
+          }
+          &.admin {
+            text-transform: capitalize;
+          }
+
+
+      @include breakpoint-down(xsmall) {
+        &.reg {
+          margin-top: 100%;
+        }
+      }
+        }
+
+        &__submit {
+          cursor: pointer;
+        }
+      }
+
+      .errors {
+        width: 350px;
+        border: 1px solid $errorBorder;
+        background: $errorBack;
+        border-radius: 50px;
+        color: $white;
+        font: {
+          size: $font-sm;
+          weight: 400;
+        }
+        margin: -10px 0 20px 0;
+        padding: 10px;
+        p {
+          margin: 0;
+          padding: 0;
+          text-align: center;
+        }
+
+        &.hide {
+          display: none;
+        }
+
+        @include breakpoint-down(small) {
+          width: 80%;
+        }
+      }
+
+      .input-group {
+        width: 350px;
+        margin: 0 0 20px 0;
+        color: $formInput;
+        position: relative;
+
+        @include breakpoint-down(medium) {
+          width: 320px;
+        }
+
+        @include breakpoint-down(small) {
+          width: 100%;
+        }
+
+        &.last-textbox {
+          margin: 0 0 40px 0;
+        }
+
+        #log_in {
+          color: $formInput;
+          font: {
+            size: 1.05rem;
+          }
+        }
+
+        input,
+        select {
+          width: 100%;
+          height: 40px;
+          border: 1px solid $veryDarkBrownOp;
+          border-radius: 50px;
+          padding: 9px 15px;
+          padding-left: 30px;
+          font-size: $font-md;
+        }
+
+        .input-icon {
+          position: absolute;
+          left: 10px;
+
+          &.toggler {
+            left: 90%;
+            font-size: $font-md;
+            cursor: pointer;
+          }
+        }
+      }
+
+      &.reg {
+        .input-group {
+          &:nth-child(3) {
+            margin: 0 0 20px 0;
+          }
+        }
+      }
+
+      a {
+        margin-bottom: 10px;
+
+        p {
+          color: $formInput;
+
+          span {
+            color: $kefri_green;
+          }
+        }
+
+        &:hover {
+          color: $kefri_brown;
+          p {
+            color: $kefri_brown;
+          }
+          p span {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .confirm-wrapper {
+        width: 100%;
+        height: 100%;
+        // border: 1px solid green;
+        background: $mask;
+        backdrop-filter: blur(20px);
+        display: none;
+        position: absolute;
+
+        &.show {
+          display: flex;
+        }
+
+        .confirm {
+          width: 300px;
+          height: 120px;
+          border-radius: 10px;
+          padding: 10px;
+
+          background: $veryDarkBrown;
+          border: 1px solid $tileSuccess;
+
+          p.success {
+            color: $tileSuccess;
+            font-size: $font-md;
+            font-weight: thin;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  a.admn {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: $font-sm;
+    color: $veryDarkBrown;
+    opacity: 0.5;
+
+    text-decoration: none;
+
+    &:hover {
+      color: $kefri_brown;
+    }
+  }
+}

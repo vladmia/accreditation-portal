@@ -1,0 +1,190 @@
+.info {
+  margin-top: 70px;
+  color: grey;
+
+  & > :not(:last-child),
+  &__downloads > :not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: $font-md;
+
+    &.about {
+      @include breakpoint-down(medium) {
+        width: 70%;
+        text-align: center;
+      }
+    }
+  }
+
+  &__line {
+    width: 100px;
+  }
+
+  &__text {
+    width: 63%;
+    line-height: 1.5;
+    padding-top: 20px;
+
+    @include breakpoint-down(medium) {
+      width: 80%;
+      text-align: justify;
+    }
+  }
+
+  &__cta {
+    margin-top: 30px;
+    width: 250px;
+  }
+
+  &__downloads {
+    margin: 100px 0;
+    width: 100%;
+
+    .info__line {
+      width: 30px;
+      margin-top: -10px;
+    }
+
+    .tile {
+      height: 470px;
+      width: 95%;
+      margin-top: 70px;
+      background: $white;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px $trBack;
+      overflow: hidden;
+
+      @include breakpoint-down(medium) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 30px;
+        padding-bottom: 10px;
+      }
+
+      &__image,
+      &__image__2,
+      &__guide {
+        width: 60%;
+        height: 100%;
+
+        @include breakpoint-down(medium) {
+          width: 100%;
+        }
+      }
+
+      &__image__2__cont {
+        width: 60%;
+        height: 100%;
+        background: url("../App/images/seedlings.jpeg");
+        background: {
+          size: cover;
+          repeat: no-repeat;
+          position: center;
+        }
+        @include breakpoint-down(medium) {
+          width: 100%;
+          height: 250px;
+        }
+      
+      }
+
+      &__image__2 {
+        transform: scale(0.5, 0.5);
+        opacity: 0.9;
+      }
+
+      &__guide {
+        width: 40%;
+        justify-content: start;
+        align-items: left;
+        padding: 10px 20px;
+        position: relative;
+
+        @include breakpoint-down(medium) {
+          padding-left: 0;
+          padding-right: 0;
+          width: 100%;
+        }
+
+        & > :not(:last-child) {
+          margin-bottom: 50px;
+        }
+
+        .tile {
+          &__line {
+            // position: absolute;
+            // top: 0;
+            // left: 50%;
+            height: 6px;
+            width: 150px;
+            margin: 0px auto;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            border: none;
+            background: $lightGreen;
+            // transform: translateX(-50%);
+          }
+        
+          &__text {
+            justify-content: start;
+            align-items: center;
+            position: relative;
+           
+
+            & > :not(:last-child) {
+              margin-right: 20px;
+
+              @include breakpoint-down(medium) {
+                margin-right: 10px;
+              }
+            }
+
+            @include breakpoint-down(medium) {
+              span:nth-child(2) {
+                font-size: $font-sm;
+              }
+            }
+
+            .d-icon {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 20px;
+              height: 20px;
+              font-size: $font-md;
+              color: green;
+             
+
+              @include breakpoint-down(medium) {
+                width: 10px;
+                height: 10px;
+                background: $lightGreen;
+                border-radius: 50%;
+              }
+            }
+          }
+
+          &__cta {
+            position: absolute;
+            right: 0;
+            padding: {
+              top: 10px;
+              bottom: 10px;
+            }
+
+            @include breakpoint-down(medium) {
+              padding: {
+                top: 6px;
+                bottom: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

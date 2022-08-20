@@ -1,0 +1,1101 @@
+.app {
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  &.cert {
+    // border: 1px solid red;
+
+    .view__cert {
+      width: 50%;
+      height: 100%;
+      // background: $trBack;
+      background: linear-gradient(45deg, $kefri_brownOp, $kefri_greenOp);
+      position: relative;
+      overflow: hidden;
+
+      .cert__mask {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: $whiteOp;
+        backdrop-filter: blur(15px);
+        justify-content: flex-start;
+        align-items: center;
+        padding: 30px 10px;
+        z-index: 2;
+
+        &.hide {
+          display: none;
+        }
+
+        p.instructions {
+          color: $formInput;
+          margin: 20% 0;
+          text-align: center;
+          font: {
+            size: $font-md;
+            weight: 400;
+          }
+        }
+
+        .mask__badge {
+          width: 150px;
+          height: 150px;
+          background: {
+            image: url("../App/images/badge.svg");
+            position: center;
+            size: contain;
+            repeat: no-repeat;
+          }
+        }
+      }
+
+      .mark {
+        &__1,
+        &__2 {
+          width: 600px;
+          height: 600px;
+          position: absolute;
+          background: {
+            image: url("../App/images/water_mark.svg");
+            position: center;
+            size: contain;
+            repeat: no-repeat;
+          }
+          opacity: 0.5;
+        }
+
+        &__1 {
+          top: -50%;
+          left: 0;
+        }
+        &__2 {
+          bottom: -50%;
+          right: 0;
+        }
+      }
+
+      .badge {
+        width: 300px;
+        height: 300px;
+        // background: $tileSuccess;
+        // border-radius: 50%;
+
+        &.class__1 {
+          background: {
+            image: url("../App/images/gold_tag.svg");
+          }
+        }
+        &.class__2 {
+          background: {
+            image: url("../App/images/silver_tag.svg");
+          }
+        }
+        &.class__3 {
+          background: {
+            image: url("../App/images/bronze_tag.svg");
+          }
+        }
+
+        &.class__1,
+        &.class__2,
+        &.class__3 {
+          background: {
+            color: none;
+            position: center;
+            size: contain;
+            repeat: no-repeat;
+          }
+        }
+      }
+
+      .cert__content {
+        width: 100%;
+        height: auto;
+        padding: 0px 5px;
+
+        p {
+          width: 100%;
+          padding: 5px 2px;
+          min-height: 50px;
+          // border: 1px solid green;
+
+          span {
+            height: 100%;
+            align-items: center;
+          }
+
+          span.label {
+            width: 50%;
+            padding: 5px 2px;
+            justify-content: flex-end;
+            // background: $whiteOp;
+            color: $formInput;
+            font: {
+              weight: 400;
+            }
+            margin-right: 20px;
+          }
+          span.cont {
+            width: 50%;
+            justify-content: flex-start;
+            text-transform: capitalize;
+            // border: 1px solid blue;
+            color: $veryDarkBrown;
+            font: {
+              weight: 600;
+            }
+
+            i {
+              // display: inline-block; //removables
+              // width: 20px; //removables
+              // height: 20px; //removables
+              // background: $lightGrey; //removables
+              // border-radius: 50%;  //removables
+
+              margin-right: 3px;
+              color: $lightGrey;
+              font-size: $font-sm;
+
+              &.active {
+                // background: $gold; //removables
+                color: $gold;
+              }
+            }
+          }
+        }
+      }
+      button.view__certificate {
+        z-index: 1;
+      }
+    }
+  }
+
+  .main__section {
+    // border: 1px solid blue;
+    width: 50%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &.hide {
+    display: none;
+  }
+  //    border: 1px solid $veryDarkBrown;
+
+  & h1 {
+    color: $errorBorder;
+    text-transform: uppercase;
+    font-size: 70px;
+  }
+
+  &__controls {
+    height: 40px;
+    // margin-bottom: 10px;
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid $trBack;
+    // background: $trBack;
+    // border-bottom: 1px solid $lightGrey;
+
+    &.cert__nurseries {
+      .search__title {
+        @include breakpoint-down(medium) {
+          display: none;
+        }
+        @include breakpoint-down(small) {
+          display: block;
+        }
+      }
+    }
+
+    @include breakpoint-down(small) {
+      justify-content: center;
+    }
+
+    .set__filter {
+      min-width: 300px;
+
+      &.small__hide {
+        @include breakpoint-down(small) {
+          display: none;
+        }
+      }
+
+      label {
+        color: $formInput;
+        font: {
+          weight: 400;
+          size: $font-xsm;
+        }
+      }
+
+      select,
+      input {
+        height: 20px;
+        border-radius: 20px;
+        padding-left: 5px;
+        border: 1px solid $formInput;
+        font-size: $font-xsm;
+
+        &:disabled {
+          border: 1px solid $lightGrey;
+          color: $placeHolder;
+          cursor: not-allowed;
+        }
+      }
+
+      select {
+        width: 100px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+
+      .select__date {
+        .date__container {
+          background: $lightGrey;
+          border-radius: 10px;
+          padding: 2px 5px;
+          &:nth-child(1) {
+            margin-right: 10px;
+          }
+
+          label {
+            color: $white;
+          }
+          input {
+            height: 20px;
+            width: 110px;
+            border: none;
+            // border: 1px solid $formInput;
+
+            border: {
+              radius: 10px;
+            }
+          }
+        }
+      }
+
+      .select__status {
+        select {
+          height: 20px;
+        }
+      }
+
+      .select__all,
+      .select__date,
+      .select__status,
+      .select__county,
+      .select__subcounty {
+        &.hide {
+          display: none;
+        }
+      }
+
+      button.apply__filter {
+        padding: 5px 10px;
+        border: none;
+        height: 100%;
+        margin-left: 5px;
+        cursor: pointer;
+        font-size: $font-xsm;
+      }
+    }
+
+    .printMe {
+      height: 100%;
+      transition: all 0.3s ease;
+
+      span.print_icon {
+        margin-right: 5px;
+        color: $formInput;
+        font-size: $font-sm;
+      }
+
+      .print__preview {
+        font-size: $font-sm;
+        font-weight: 400;
+        color: $formInput;
+      }
+
+      &:hover {
+        transform: scale(1.2, 1.2);
+        span.print_icon,
+        span.print__preview {
+          color: $veryDarkBrownOp;
+        }
+
+        cursor: pointer;
+      }
+    }
+
+    .search__container {
+      height: 100%;
+      overflow: hidden;
+      outline: none;
+      border: none;
+
+      p.search__title {
+        padding-right: 3px;
+        font-size: $font-sm;
+        color: $veryDarkBrown;
+      }
+    }
+
+    .search {
+      height: 100%;
+      border-radius: 10px;
+      border: 1px solid $formInput;
+      overflow: hidden;
+
+      span {
+        width: 30px;
+        height: 100%;
+        border: none;
+        background: $lightGrey;
+        color: $white;
+        border-right: 1px solid $lightGrey;
+        cursor: pointer;
+
+        &:hover {
+          background: $formInput;
+        }
+      }
+
+      input {
+        height: 100%;
+        border: none;
+        background: $whiteOp;
+        padding: 2px 3px;
+        outline: none;
+      }
+    }
+  }
+
+  &__header {
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    background: $whiteOp;
+    color: $formTitle;
+    border: 1px solid $trBack;
+    border-bottom: 2px solid $errorBorder;
+    margin-bottom: 10px;
+    position: relative;
+    // border-radius: 20px 20px 0 0;
+
+    & p {
+      width: 20%;
+      height: 100%;
+      color: $veryDarkBrown;
+      justify-content: center;
+      align-items: center;
+      font: {
+        weight: 400;
+        size: $font-xsm_low;
+      }
+
+      &:nth-child(2) {
+        &:not(.last__name) {
+          width: 30%;
+        }
+      }
+
+      &.btn {
+        width: 10%;
+      }
+    }
+
+    &.assign__form__header {
+      margin: 0;
+    }
+  }
+
+  &__content {
+    height: calc(86vh - 60px);
+    overflow-y: scroll;
+
+    &.certification {
+      width: 100%;
+      position: relative;
+
+      .app__header {
+        background: $white;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .app__table {
+        tr {
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+
+          td.d-none {
+            display: none;
+          }
+
+          &.selected {
+            background: $lightGreyOp;
+          }
+
+          &:hover {
+            background: $trBack;
+          }
+        }
+      }
+    }
+
+    &.no-overflow {
+      overflow: hidden;
+    }
+
+    &.add__emails {
+      flex-direction: column;
+      align-items: start;
+
+      .add__insp {
+        margin: 20px 0 0 30px;
+      }
+    }
+
+    .app__assign__form {
+      height: 100%;
+      width: 100%;
+
+      .assign__button {
+        border: none;
+        height: 50px;
+        padding: 5px 50px;
+        font: {
+          size: $font-md;
+          weight: 600;
+        }
+        cursor: pointer;
+      }
+    }
+
+    .table__container {
+      height: 90%;
+      overflow-y: scroll;
+      width: 100%;
+      border: {
+        bottom-left-radius: 5px;
+        bottom-right-radius: 5px;
+      }
+      box-shadow: 0px 0px 5px $formTitle;
+      // border: 1px solid green;
+    }
+
+    .app__table {
+      min-height: 100%;
+      width: 100%;
+      position: relative;
+
+      tr {
+        width: 100%;
+        min-height: 50px;
+        padding: 5px;
+        border-bottom: 1px solid $errorBack;
+        position: relative;
+
+        &.inactive,
+        &.active {
+          td {
+            &:not(:last-child) {
+              opacity: 0.5;
+            }
+          }
+        }
+
+        &.active {
+          td {
+            &:not(:last-child) {
+              opacity: 1;
+            }
+          }
+        }
+
+        &.app__empty {
+          position: absolute;
+          height: 100%;
+          top: 0;
+          left: 0;
+          border: none;
+
+          &.d_none {
+            display: none;
+          }
+        }
+
+        &.hide {
+          &:not(.app__empty) {
+            display: none;
+          }
+        }
+
+        &.applied::before,
+        &.assigned::before {
+          position: absolute;
+          content: "Applied for Certification";
+          display: flex;
+          left: 0;
+          justify-content: center;
+          align-items: center;
+          font: {
+            size: $font-md;
+            weight: 400px;
+          }
+          color: $tileSuccess;
+          width: 100%;
+          height: 100%;
+          background: $veryDarkBrownOp;
+          backdrop-filter: blur(5px);
+          border-radius: 10px;
+          animation: 4s disappear ease-in forwards;
+
+          @keyframes disappear {
+            0% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+            }
+          }
+        }
+
+        &.assigned::before {
+          content: "Assigned Inspector";
+        }
+
+        // &:nth-child(even) {
+        //   background: $trBack;
+        // }
+      }
+
+      td {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        color: $formTitle;
+        text-transform: capitalize;
+        text-align: center;
+
+        font: {
+          weight: 400;
+          size: $font-xsm_low;
+        }
+        &:nth-child(2) {
+          &:not(.last__name) {
+            width: 30%;
+          }
+        }
+
+        &.btn {
+          width: 10%;
+          // width: 10% !important;
+          cursor: pointer;
+
+          i {
+            width: 50%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.2s ease;
+
+            &:hover {
+              transform: scale(1.4, 1.4);
+              color: $dark;
+            }
+          }
+        }
+
+        height: 80%;
+
+        .apply_button {
+          min-width: 50%;
+          border: none;
+          height: 50%;
+        }
+
+        .update__button,
+        .view__button {
+          font-size: $font-sm;
+          cursor: pointer;
+        }
+
+        & > select {
+          height: 30px;
+          border-radius: 30px;
+          padding: 5px;
+          border: 1px solid $formTitle;
+          color: $formInput;
+          cursor: pointer;
+        }
+
+        &.message,
+        &.image {
+          width: 70%;
+          text-transform: none;
+          font: {
+            size: $font-lg;
+            weight: 600;
+          }
+        }
+
+        &.message {
+          height: 20%;
+        }
+
+        &.image {
+          height: 70%;
+          background: {
+            color: $lightGreyOp;
+            image: url("../App/images/no_data.svg");
+            position: center;
+            size: 60% 70%;
+            repeat: no-repeat;
+          }
+          border-radius: 20px;
+        }
+
+        .switch {
+          display: inline-block;
+          width: 40px;
+          height: 10px;
+          position: relative;
+          background: $tileFail;
+          border-radius: 20px;
+          transition: all 0.4s ease-in-out;
+          box-shadow: 0px 0px 4px $mask;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          input[type="checkbox"] {
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+
+          .slider {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: none;
+            box-shadow: 0px 0px 6px $mask;
+            background: $white;
+            position: absolute;
+            left: 0;
+            top: -2.5px;
+            transition: all 0.4s ease-in-out;
+          }
+
+          &.activated {
+            background: $tileSuccess;
+            span.slider {
+              margin-left: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__iframe__container,
+  .feedback__iframe__container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $mask;
+    backdrop-filter: blur(10px);
+    z-index: 4;
+
+    &.hide {
+      display: none;
+    }
+
+    .iframe__close {
+      font-size: $font-lg;
+      color: $white;
+      position: absolute;
+      height: 25px;
+      width: 25px;
+
+      top: 10px;
+      right: 20px;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:hover {
+        border: 1px solid $whiteOp;
+      }
+
+      &.feedback {
+        z-index: 3;
+        top: 1px;
+        right: 10px;
+        color: $dark;
+        font-weight: 600;
+
+        &:hover {
+          border: 1px solid $lightGrey;
+          color: $veryDarkBrown;
+          background: $white;
+        }
+      }
+    }
+
+    .app__report {
+      width: 90%;
+      height: 90%;
+      background: $white;
+      overflow-y: scroll;
+      border: none;
+      border-radius: 10px;
+
+      &.feedback {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        background: none;
+        backdrop-filter: blur(10px);
+      }
+    }
+  }
+
+  .feedback__iframe__container {
+    background: $trBack;
+
+    .iframe__loader {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: $white;
+      backdrop-filter: blur(50px);
+      p {
+        color: $kefri_green;
+        margin-bottom: 20px;
+        font: {
+          size: $font-sm;
+          weight: 400;
+        }
+      }
+
+      .loader {
+        color: $kefri_green;
+        font-size: $font-md;
+
+        &.hide {
+          display: none;
+        }
+      }
+
+      &.hide {
+        animation: hideMe 2s ease-in-out forwards;
+
+        @keyframes hideMe {
+          0% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+
+  //application certification guideline popup
+  .app__guide {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    background: $white;
+    border-radius: 10px;
+    border: 1px solid $trBack;
+    box-shadow: 0px 0px 20px $mask;
+    top: 90px;
+    right: 15%;
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 3px;
+    padding-top: 40px;
+    animation: smoothAnim 0.6s ease-in-out forwards;
+    cursor: pointer;
+
+    &.hide {
+      display: none;
+    }
+
+    p.guide__head {
+      width: 100%;
+      height: 40px;
+      background: $kefri_brown;
+      color: $white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font: {
+        size: $font-md;
+        weight: 600;
+      }
+    }
+
+    span.close__guide {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      right: 4px;
+      z-index: 3;
+      cursor: pointer;
+      font: {
+        size: $font-lg;
+        weight: 600;
+      }
+      color: $veryDarkBrown;
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    p.guide__one,
+    p.guide__two,
+    p.guide__three {
+      width: 100%;
+      border-bottom: 1px solid $trBack;
+      color: $formInput;
+      height: auto;
+      padding: 5px;
+      text-align: left;
+      border-left: 8px solid $trBack;
+      margin: 10px 0;
+      line-height: 1.6em;
+      font: {
+        weight: 400;
+        size: $font-sm;
+      }
+
+      span {
+        &:not(.button) {
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+          font: {
+            size: $font-xlg;
+            weight: 900;
+          }
+          color: $kefri_brown;
+        }
+      }
+    }
+
+    span.button {
+      border-radius: 7px;
+      padding: 3px 4px;
+      font-size: $font-xsm;
+      display: inline;
+    }
+
+    @keyframes smoothAnim {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// zero__content
+.zero {
+  &__content {
+    height: 100%;
+    width: 100%;
+
+    &__title {
+      color: $veryDarkBrownOp;
+      margin-bottom: 30px;
+      width: 70%;
+      font: {
+        weight: 400;
+        size: $font-md;
+      }
+    }
+
+    .button {
+      border: none;
+      padding: 8px 10px;
+      margin: -10px 0 30px 0;
+    }
+
+    &__image {
+      height: 60%;
+      width: 60%;
+      background: {
+        image: url("../App/images/no_data.svg");
+        position: center;
+        size: contain;
+        repeat: no-repeat;
+      }
+
+      // border: 1px solid $errorBack;
+    }
+
+    &.hide {
+      display: none;
+    }
+  }
+}
+
+// view nurseries
+.nurs__expand {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  // border-radius: 20px;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  // background: $trBack;
+  background: linear-gradient(45deg, $kefri_greenOp, $kefri_brownOp);
+  backdrop-filter: blur(20px);
+  color: $formInput;
+  // overflow-y: scroll;
+
+  &.hide {
+    display: none;
+  }
+
+  .nurs {
+    &__close {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 50px;
+      height: 30px;
+      padding: 2px 3px;
+      font-size: $font-lg;
+      font-weight: 400;
+      cursor: pointer;
+    }
+
+    &__header {
+      width: 100%;
+      height: 5%;
+      // border-bottom: 1px solid $lightGrey;
+      // background: $errorBack;
+      font-size: $font-md;
+      font-weight: 600;
+      color: $veryDarkBrown;
+      text-transform: capitalize;
+      //  border-radius: 20px;
+    }
+
+    &__data {
+      width: 100%;
+      height: 60%;
+      background: $whiteOp;
+      border-radius: 10px;
+
+      .nurs__content {
+        width: 100%;
+        height: 100%;
+
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 5px;
+        padding-top: 20px;
+        // border: 1px solid green;
+
+        .data__content {
+          height: 40px;
+          // margin-left: 20%;
+          text-transform: capitalize;
+          // border: 1px solid red;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+
+          label {
+            margin-right: 10px;
+            font-weight: 400;
+            color: $formInput;
+            // border: 1px solid blue;
+            text-align: right;
+          }
+          p {
+            font-weight: 400;
+            text-align: left;
+            color: $veryDarkBrown;
+          }
+        }
+      }
+    }
+
+    &__species__header {
+      margin: 5px 0;
+      width: 100%;
+      font-size: $font-md;
+      height: 5%;
+      color: $veryDarkBrownOp;
+      // border: 1px solid red;
+    }
+
+    &__species {
+      // border: 1px solid green;
+      width: 100%;
+      background: $whiteOp;
+      text-transform: capitalize;
+      height: 30%;
+      overflow-y: hidden;
+      border-radius: 10px;
+
+      .species__title {
+        width: inherit;
+        height: 40px;
+        font-size: $font-sm;
+        font-weight: 400;
+        border-bottom: 1px solid $veryDarkBrownOp;
+        margin-bottom: 20px;
+
+        p {
+          width: 30%;
+          text-align: center;
+          color: $veryDarkBrownOp;
+          font-weight: 600;
+        }
+      }
+      .species__content {
+        overflow-y: scroll;
+        width: inherit;
+        .species__row {
+          width: inherit;
+          padding: 5px 0px;
+          border-bottom: 1px solid $lightGreyOp;
+          p {
+            width: 30%;
+            text-align: center;
+            color: $veryDarkBrown;
+          }
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+// colors
+$darkGreen: #116713;
+$lightGreen: #17DD1E;
+$lightGreenOp: rgba(23, 221, 30, 0.6);
+$lightGrey: #D6CDCD;
+$lightGreyOp: rgba(102, 95, 95, 0.34);
+$lightGrey: rgba(102, 95, 95, 0.482);
+$lightGrey_2: rgb(246, 233, 233); //added
+$grey: #654C4C;
+$dark: #000;;
+$tileFont: rgba(54, 10, 10, 81%);
+$formTitle: rgba(100, 83, 83, 70%);
+$tileSuccess: #7ac142;
+$questionActive: #9fd874de;
+$tileFail: rgb(192, 69, 69);
+$navLink: rgba(8, 97, 44, 0.483);
+$navHover: rgba(9, 131, 58, 0.265);
+$darkBrown: #330E0E;
+$veryDarkBrown: #270E0E;
+$veryDarkBrownOp: rgba(39, 14, 14, 0.8);
+$placeHolder: lightgrey;
+$gold: gold;
+$silver: silver;
+
+$white: #ffffff;
+$whiteOp: rgba(255, 255, 255, 0.5);
+$whiteOpHeader: rgba(255, 255, 255, 0.904);
+$mask: rgba(0, 0, 0, 0.7);
+$formInput: #6E6E6E;
+$forgotPass: rgb(3, 124, 21);
+$trBack: rgba(90, 116, 98, 0.149);
+$myAppHeader: rgba(163, 86, 86, 0.346);
+$errorBorder: rgba(194, 84, 84, 0.714);
+$errorBack: rgba(200, 95, 95, 0.714);
+$sectionBoxShadow: rgba(34, 14, 14, 0.2); //added
+$submitError: rgb(251, 231, 231); //added
+
+$kefri_brown: #c25929;
+$kefri_green: #64ab5e;
+$kefri_brownOp: #c2592966;
+$kefri_greenOp: #65ab5ec1;
+
+
+
+ 
+// font sizes
+$font-xsm: 0.6875rem; // 11px
+$font-xsm_low: 0.75rem;//12px
+$font-sm: 0.875rem;  // 14px
+$font-md: 1.125rem; // 18px
+$font-lg: 1.375rem; // 22px
+$font-xlg: 1.875rem; // 30px
+$font-xxlg: 3.75rem; // 60px
+
+// image urls
+$headerBack: url('../app/images/nursery_image_2.jpeg');
+
+// calculations
+$nav-height: calc(100vh - 60px);
+$inspectionBodyHeight: calc(7.4 / 8 * (100vh - 60px)); //added
+$inspectionFooterHeight: calc(0.6 / 8 * (100vh - 60px)); //added
+
+
